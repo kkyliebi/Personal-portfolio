@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio structure for a visual designer." />
+    <title>Home | Visual Designer Portfolio</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a href="/">Visual Designer Portfolio</a>
+      <nav class="horizontal-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a aria-current="page" data-nav-section="home" href="/">Home</a></li>
+          <li><a data-nav-section="about" href="/about/">About</a></li>
+          <li><a data-nav-section="work" href="/work/">Work</a></li>
+          <li><a data-nav-section="archive" href="/archive/">Archive</a></li>
+          <li><a data-nav-section="contact" href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main" class="section-stack">
+      <section aria-labelledby="home-title">
+        <p>Home / Index / Entry</p>
+        <h1 id="home-title">Portfolio structure for a visual designer</h1>
+        <p>This entry page introduces the identity layer, project index, optional archive, and contact route.</p>
+      </section>
+      <section aria-labelledby="entry-routes-title">
+        <h2 id="entry-routes-title">Entry routes</h2>
+        <ul>
+          <li><a href="/about/">About / Identity Layer</a></li>
+          <li><a href="/work/">Work / All Projects Entry</a></li>
+          <li><a href="/archive/">Archive / Optional Experiments</a></li>
+          <li><a data-nav-section="contact" href="/contact/">Contact</a></li>
+        </ul>
+      </section>
+    </main>
+    <script type="module" src="/src/interactions.js"></script>
+  </body>
+</html>
+package.json
+package.json
