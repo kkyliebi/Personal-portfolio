@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Archive | Visual Designer Portfolio</title><link rel="stylesheet" href="/src/styles.css" /></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><a href="/">Visual Designer Portfolio</a><nav class="horizontal-nav" aria-label="Primary navigation"><ul class="nav-list"><li><a data-nav-section="home" href="/">Home</a></li><li><a data-nav-section="about" href="/about/">About</a></li><li><a data-nav-section="work" href="/work/">Work</a></li><li><a aria-current="page" data-nav-section="archive" href="/archive/">Archive</a></li><li><a data-nav-section="contact" href="/contact/">Contact</a></li></ul></nav></header><main id="main" class="section-stack"><section aria-labelledby="archive-title"><p>Archive / Optional Experiments</p><h1 id="archive-title">Archive</h1><p>Optional route for experiments, prototypes, workshops, visual tests, and process fragments.</p></section></main><script type="module" src="/src/interactions.js"></script></body></html>
+contact/index.html
+contact/index.html
+New
++2
+-0
+
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Contact | Visual Designer Portfolio</title><link rel="stylesheet" href="/src/styles.css" /></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><a href="/">Visual Designer Portfolio</a><nav class="horizontal-nav" aria-label="Primary navigation"><ul class="nav-list"><li><a data-nav-section="home" href="/">Home</a></li><li><a data-nav-section="about" href="/about/">About</a></li><li><a data-nav-section="work" href="/work/">Work</a></li><li><a data-nav-section="archive" href="/archive/">Archive</a></li><li><a aria-current="page" data-nav-section="contact" href="/contact/">Contact</a></li></ul></nav></header><main id="main" class="section-stack"><section aria-labelledby="contact-title"><p>Contact</p><h1 id="contact-title">Contact</h1><p>Placeholder for email, social links, résumé, availability, or booking information.</p></section></main><script type="module" src="/src/interactions.js"></script></body></html>
+data/projects.json
+data/projects.json
+New
++76
+-0
+
+{
+  "readingOrder": [
+    "trex-communication-system",
+    "oracle-glyph-system",
+    "ar-interactive-typography",
+    "speculative-branding-system",
+    "editorial-visual-communication-project"
+  ],
+  "projects": [
+    {
+      "id": "trex-communication-system",
+      "index": "01",
+      "title": "T-Rex Communication System",
+      "year": "2026",
+      "type": "Speculative system",
+      "medium": ["Interface", "Sound", "Motion"],
+      "concept": "A communication framework that translates prehistoric movement, sound, and signal behavior into a contemporary visual and interaction system.",
+      "route": "/work/project-01-t-rex-communication-system/",
+      "tags": ["speculative", "interaction", "translation"],
+      "previous": "editorial-visual-communication-project",
+      "next": "oracle-glyph-system"
+    },
+    {
+      "id": "oracle-glyph-system",
+      "index": "02",
+      "title": "Oracle Glyph System",
+      "year": "2026",
+      "type": "Symbol system",
+      "medium": ["Glyphs", "Print", "Digital"],
+      "concept": "A modular symbolic language for divination, ritual interaction, and adaptive identity across printed and screen-based contexts.",
+      "route": "/work/project-02-oracle-glyph-system/",
+      "tags": ["glyphs", "ritual", "identity"],
+      "previous": "trex-communication-system",
+      "next": "ar-interactive-typography"
+    },
+    {
+      "id": "ar-interactive-typography",
+      "index": "03",
+      "title": "AR / Interactive Typography",
+      "year": "2025",
+      "type": "Interactive typography",
+      "medium": ["AR", "Typography", "Spatial interaction"],
+      "concept": "An augmented typography study where letterforms respond to spatial context, gesture, and viewer participation.",
+      "route": "/work/project-03-ar-interactive-typography/",
+      "tags": ["typography", "augmented reality", "interaction"],
+      "previous": "oracle-glyph-system",
+      "next": "speculative-branding-system"
+    },
+    {
+      "id": "speculative-branding-system",
+      "index": "04",
+      "title": "Speculative Branding System",
+      "year": "2025",
+      "type": "Brand identity",
+      "medium": ["Identity", "Motion", "Guidelines"],
+      "concept": "A future-facing brand framework built from adaptive rules, narrative behaviors, and flexible identity components.",
+      "route": "/work/project-04-speculative-branding-system/",
+      "tags": ["branding", "systems", "speculative"],
+      "previous": "ar-interactive-typography",
+      "next": "editorial-visual-communication-project"
+    },
+    {
+      "id": "editorial-visual-communication-project",
+      "index": "05",
+      "title": "Editorial / Visual Communication Project",
+      "year": "2024",
+      "type": "Editorial design",
+      "medium": ["Publication", "Typography", "Image sequencing"],
+      "concept": "A publication-led visual communication project focused on research, sequencing, typographic hierarchy, and image systems.",
+      "route": "/work/project-05-editorial-visual-communication-project/",
+      "tags": ["editorial", "publication", "visual communication"],
+      "previous": "speculative-branding-system",
+      "next": "trex-communication-system"
+    }
+  ]
+}
