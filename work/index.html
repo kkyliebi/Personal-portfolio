@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work | Visual Designer Portfolio</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a href="/">Visual Designer Portfolio</a>
+      <nav class="horizontal-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a data-nav-section="home" href="/">Home</a></li>
+          <li><a data-nav-section="about" href="/about/">About</a></li>
+          <li><a aria-current="page" data-nav-section="work" href="/work/">Work</a></li>
+          <li><a data-nav-section="archive" href="/archive/">Archive</a></li>
+          <li><a data-nav-section="contact" href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main" class="section-stack">
+      <section aria-labelledby="work-title">
+        <p>Work / All Projects Entry</p>
+        <h1 id="work-title">Project index</h1>
+        <p>A numbered index that supports narrative reading order, metadata scanning, and random access.</p>
+      </section>
+
+      <nav class="horizontal-nav" aria-label="Random access project jump list">
+        <ol class="project-index-list">
+          <li><a data-project-id="trex-communication-system" href="/work/project-01-t-rex-communication-system/">01</a></li>
+          <li><a data-project-id="oracle-glyph-system" href="/work/project-02-oracle-glyph-system/">02</a></li>
+          <li><a data-project-id="ar-interactive-typography" href="/work/project-03-ar-interactive-typography/">03</a></li>
+          <li><a data-project-id="speculative-branding-system" href="/work/project-04-speculative-branding-system/">04</a></li>
+          <li><a data-project-id="editorial-visual-communication-project" href="/work/project-05-editorial-visual-communication-project/">05</a></li>
+        </ol>
+      </nav>
+
+      <section class="preview-strip-mount" data-project-preview-strip></section>
+
+      <section class="content-block" aria-labelledby="filters-title">
+        <h2 id="filters-title">Filter groups</h2>
+        <p>Filter controls are structural placeholders that can be wired to <code>data/projects.json</code> in a later interaction pass.</p>
+        <div class="filter-groups">
+          <section aria-labelledby="filter-year-title">
+            <h3 id="filter-year-title">Year</h3>
+            <ul class="meta-list"><li>2026</li><li>2025</li><li>2024</li></ul>
+          </section>
+          <section aria-labelledby="filter-type-title">
+            <h3 id="filter-type-title">Type</h3>
+            <ul class="meta-list"><li>Speculative system</li><li>Symbol system</li><li>Interactive typography</li><li>Brand identity</li><li>Editorial design</li></ul>
+          </section>
+          <section aria-labelledby="filter-medium-title">
+            <h3 id="filter-medium-title">Medium</h3>
+            <ul class="meta-list"><li>Interface</li><li>Sound</li><li>Motion</li><li>Glyphs</li><li>Print</li><li>Digital</li><li>AR</li><li>Typography</li><li>Publication</li></ul>
+          </section>
+        </div>
+      </section>
+
+      <ol class="project-index-list project-index-list--stacked" aria-label="Narrative project index">
+        <li class="project-index-card">
+          <a data-project-id="trex-communication-system" href="/work/project-01-t-rex-communication-system/"><span>Project 01</span><h2>T-Rex Communication System</h2></a>
+          <dl><dt>Year</dt><dd>2026</dd><dt>Type</dt><dd>Speculative system</dd><dt>Medium</dt><dd>Interface, Sound, Motion</dd><dt>Concept</dt><dd>A communication framework that translates prehistoric movement, sound, and signal behavior into a contemporary visual and interaction system.</dd></dl>
+        </li>
+        <li class="project-index-card">
+          <a data-project-id="oracle-glyph-system" href="/work/project-02-oracle-glyph-system/"><span>Project 02</span><h2>Oracle Glyph System</h2></a>
+          <dl><dt>Year</dt><dd>2026</dd><dt>Type</dt><dd>Symbol system</dd><dt>Medium</dt><dd>Glyphs, Print, Digital</dd><dt>Concept</dt><dd>A modular symbolic language for divination, ritual interaction, and adaptive identity across printed and screen-based contexts.</dd></dl>
+        </li>
+        <li class="project-index-card">
+          <a data-project-id="ar-interactive-typography" href="/work/project-03-ar-interactive-typography/"><span>Project 03</span><h2>AR / Interactive Typography</h2></a>
+          <dl><dt>Year</dt><dd>2025</dd><dt>Type</dt><dd>Interactive typography</dd><dt>Medium</dt><dd>AR, Typography, Spatial interaction</dd><dt>Concept</dt><dd>An augmented typography study where letterforms respond to spatial context, gesture, and viewer participation.</dd></dl>
+        </li>
+        <li class="project-index-card">
+          <a data-project-id="speculative-branding-system" href="/work/project-04-speculative-branding-system/"><span>Project 04</span><h2>Speculative Branding System</h2></a>
+          <dl><dt>Year</dt><dd>2025</dd><dt>Type</dt><dd>Brand identity</dd><dt>Medium</dt><dd>Identity, Motion, Guidelines</dd><dt>Concept</dt><dd>A future-facing brand framework built from adaptive rules, narrative behaviors, and flexible identity components.</dd></dl>
+        </li>
+        <li class="project-index-card">
+          <a data-project-id="editorial-visual-communication-project" href="/work/project-05-editorial-visual-communication-project/"><span>Project 05</span><h2>Editorial / Visual Communication Project</h2></a>
+          <dl><dt>Year</dt><dd>2024</dd><dt>Type</dt><dd>Editorial design</dd><dt>Medium</dt><dd>Publication, Typography, Image sequencing</dd><dt>Concept</dt><dd>A publication-led visual communication project focused on research, sequencing, typographic hierarchy, and image systems.</dd></dl>
+        </li>
+      </ol>
+    </main>
+    <script type="module" src="/src/interactions.js"></script>
+  </body>
+</html>
